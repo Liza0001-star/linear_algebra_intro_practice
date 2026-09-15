@@ -32,7 +32,7 @@ def add(x: np.ndarray, y: np.ndarray) -> np.ndarray:
     """Vector addition. 
 
     Args:
-        x (np.ndarray): 1th vector.
+        x (np.ndarray): 1st vector.
         y (np.ndarray): 2nd vector.
 
     Returns:
@@ -71,7 +71,7 @@ def dot_product(x: np.ndarray, y: np.ndarray) -> float:
     """Vectors dot product.
 
     Args:
-        x (np.ndarray): 1th vector.
+        x (np.ndarray): 1st vector.
         y (np.ndarray): 2nd vector.
 
     Returns:
@@ -97,7 +97,7 @@ def distance(x: np.ndarray, y: np.ndarray) -> float:
     """L2 distance between vectors.
 
     Args:
-        x (np.ndarray): 1th vector.
+        x (np.ndarray): 1st vector.
         y (np.ndarray): 2nd vector.
 
     Returns:
@@ -107,15 +107,17 @@ def distance(x: np.ndarray, y: np.ndarray) -> float:
 
 
 def cos_between_vectors(x: np.ndarray, y: np.ndarray) -> float:
-    """Cosine between vectors in deg.
+    """Angle between two vectors, in degrees.
+
+    Despite the name, this returns the angle itself and not its cosine:
+    0 for parallel vectors, 90 for orthogonal ones, 180 for opposite ones.
 
     Args:
-        x (np.ndarray): 1th vector.
-        y (np.ndarray): 2nd vector.
-
+        x (np.ndarray): 1st vector, shape (n, 1).
+        y (np.ndarray): 2nd vector, shape (n, 1).
 
     Returns:
-        np.ndarray: angle in deg.
+        float: angle in degrees, in [0, 180].
     """
     raise NotImplementedError
 
@@ -124,7 +126,7 @@ def is_orthogonal(x: np.ndarray, y: np.ndarray) -> bool:
     """Check is vectors orthogonal.
 
     Args:
-        x (np.ndarray): 1th vector.
+        x (np.ndarray): 1st vector.
         y (np.ndarray): 2nd vector.
 
 

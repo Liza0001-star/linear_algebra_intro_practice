@@ -84,7 +84,7 @@ def matrix_transpose(x: np.ndarray) -> np.ndarray:
         x (np.ndarray): matrix.
 
     Returns:
-        np.ndarray: transosed matrix.
+        np.ndarray: transposed matrix.
     """
     raise NotImplementedError
 
@@ -93,11 +93,11 @@ def hadamard_product(x: np.ndarray, y: np.ndarray) -> np.ndarray:
     """Compute hadamard product.
 
     Args:
-        x (np.ndarray): 1th matrix.
+        x (np.ndarray): 1st matrix.
         y (np.ndarray): 2nd matrix.
 
     Returns:
-        np.ndarray: hadamard produc
+        np.ndarray: Hadamard product.
     """
     raise NotImplementedError
 
